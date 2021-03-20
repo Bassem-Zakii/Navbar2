@@ -1,0 +1,368 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+.g-container {
+  width: 100%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+@media (min-width: 576px) {
+  .g-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .g-container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .g-container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .g-container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .g-container {
+    max-width: 1320px;
+  }
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/g-icon-search.eot?db5t4w");
+  src: url("../fonts/g-icon-search.eot?db5t4w#iefix") format("embedded-opentype"), url("../fonts/g-icon-search.ttf?db5t4w") format("truetype"), url("../fonts/g-icon-search.woff?db5t4w") format("woff"), url("../fonts/g-icon-search.svg?db5t4w#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search11:before {
+  content: "\e901";
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+}
+
+header {
+  background-color: #eafdf8;
+}
+
+header .g-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 8px 0;
+  position: relative;
+  height: 55px;
+}
+
+header .g-container .logo a {
+  font-size: 1.5rem;
+  color: #000;
+  text-decoration: none;
+}
+
+header .g-container nav .navbtn {
+  display: none;
+}
+
+header .g-container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+header .g-container nav ul li {
+  margin: 0 6px;
+}
+
+header .g-container nav ul li a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+header .g-container nav ul li a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  border-radius: 5px;
+  display: block;
+  background-color: #1e555c;
+  -webkit-transition: width 0.2s ease;
+  transition: width 0.2s ease;
+}
+
+header .g-container nav ul li a:hover {
+  color: #1e555c;
+}
+
+header .g-container nav ul li a:hover:after {
+  width: 100%;
+}
+
+header .g-container nav ul li a.active {
+  color: #1e555c;
+}
+
+header .g-container nav ul li a.active:after {
+  width: 100%;
+}
+
+header .g-container .search-nav .g-search-btn {
+  display: none;
+}
+
+header .g-container .search-nav form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 18% i !important;
+}
+
+header .g-container .search-nav form [type="search"] {
+  border: 1px solid #ccc;
+  padding: 3px 5px;
+  height: 32px;
+  border-radius: 3px 0 0 3px;
+}
+
+header .g-container .search-nav form button {
+  height: 32px;
+  width: 32px;
+  border: 0;
+  border-radius: 0 3px 3px 0;
+  background-color: #1e555c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .g-container .search-nav form button span {
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+@media (max-width: 992px) {
+  header .g-container .logo {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  header .g-container nav {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    position: relative;
+  }
+  header .g-container nav .navbtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+  }
+  header .g-container nav .navbtn span {
+    display: block;
+    background-color: #1e555c;
+    width: 24px;
+    height: 3px;
+    margin: 3px 0;
+    border-radius: 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  header .g-container nav .navbtn span:nth-child(2) {
+    width: 18px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  header .g-container nav .navbtn.active {
+    height: 27px;
+  }
+  header .g-container nav .navbtn.active span {
+    background-color: #a51313;
+    margin: -1px auto;
+    border-radius: 10px;
+  }
+  header .g-container nav .navbtn.active span:first-child {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  header .g-container nav .navbtn.active span:nth-child(2) {
+    display: none;
+  }
+  header .g-container nav .navbtn.active span:last-child {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  header .g-container nav ul {
+    background-color: #23b5d3;
+    position: fixed;
+    top: 55px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 55px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding-top: 15px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  header .g-container nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  header .g-container nav ul li a {
+    display: block;
+    font-size: 1.1rem;
+    padding: 8px 0;
+    color: #fff;
+  }
+  header .g-container nav ul li a:after {
+    display: none;
+  }
+  header .g-container nav ul.active {
+    left: 0;
+  }
+  header .g-container .search-nav {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    position: relative;
+  }
+  header .g-container .search-nav .g-search-btn {
+    height: 32px;
+    width: 32px;
+    border: 0;
+    border-radius: 3px;
+    background-color: #1e555c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .g-container .search-nav .g-search-btn span {
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  header .g-container .search-nav form {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 18px);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  header .g-container .search-nav form:after {
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgba(30, 85, 92, 0.5);
+    position: absolute;
+    top: -16px;
+    right: 5px;
+  }
+  header .g-container .search-nav form:before {
+    content: "";
+    position: absolute;
+    background-color: rgba(30, 85, 92, 0.5);
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    z-index: -1;
+    border-radius: 3px;
+    pointer-events: none;
+  }
+  header .g-container .search-nav form.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
